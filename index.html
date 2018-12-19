@@ -1,765 +1,221 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="鹿光衡器">
-    <meta name="description" content="鹿光衡器">
-    <script type="text/javascript" src="http://luguang.hexiflower.com/statics/js/jquery1.42.min.js"></script>
-    <script type="text/javascript" src="http://luguang.hexiflower.com/statics/js/zoom.js"></script>
-    <script type="text/javascript" src="http://luguang.hexiflower.com/statics/js/jquery.SuperSlide.2.1.1.js"></script>
-    <link rel="stylesheet" href="http://luguang.hexiflower.com/statics/css/style.css">
-
-
-  <title>鹿光衡器</title>
-</head>
-<body>
-    <div class="common"  id="anchor">
-        <div class="head" class="fix">
-            <div class="w1200">
-                <p>欢迎来到石家庄鹿光衡器有限公司 !</p>
-                <span>0311-82100713、0311-82011949</span>
-            </div>
-        </div>
-        <div class="logo fix w1200">
-            <div class="left fix">
-                
-                <i>  <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027060744697.png"></i>
-            </div>
-            <div class="right">
-                <form class="fix" method="get" id="form" action="http://luguang.hexiflower.com//index.php?m=search&c=index&a=init&typeid=0&siteid=1&q=">
-                    <input type="text" name="q" class="text" placeholder="请输入搜索内容">
-                    <input type="button" id="search" value="搜索" class="submit">
-                    <img src="http://luguang.hexiflower.com/statics/images/index3.png">
-                </form>
-                <script>
-                    $('#search').click(function () {
-                        var q = $('[name=q]').val();
-                        if(!q){
-                            alert('请输入关键词');
-                            return
-                        }
-                        var url = $('#form').attr('action');
-                        url = url+q;
-                        window.location.href=url;
-                    })
-                </script>
-            </div>
-        </div>
-        <div class="w1200">
-            <div class="nav fix">
-                <div class="w1200">
-                    <ul class="navul fix">
-                        <li class="nLi on">
-                            <h3><a href="/">网站首页</a></h3>
-                        </li>
-                                                                        <li class="nLi">
-                            <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=9">关于鹿光</a></h3>
-                             <div class="sub">
-                                <div class="w1200 fix">
-                                                                                                            <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=35">公司简介</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=37">企业文化</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=55">荣誉资质</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=39">生产流程</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                                                        </div>
-                            </div>
-                        </li>
-                                                <li class="nLi">
-                            <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=10">新闻中心</a></h3>
-                             <div class="sub">
-                                <div class="w1200 fix">
-                                                                                                            <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=11">公司动态</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=12">行业新闻</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                                                        </div>
-                            </div>
-                        </li>
-                                                <li class="nLi">
-                            <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=22">产品中心</a></h3>
-                             <div class="sub">
-                                <div class="w1200 fix">
-                                                                                                            <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=40">称重基础零部件</a></h3>
-                                        
-                                                                                <ul>
-                                                                                        <li><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=44">电阻应变器</a></li>
-                                                                                        <li><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=45">称重传感器</a></li>
-                                                                                    </ul>
-                                                                                                                   </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=41">工业衡器</a></h3>
-                                        
-                                                                                <ul>
-                                                                                        <li><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=46">电子汽车衡</a></li>
-                                                                                    </ul>
-                                                                                                                   </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=42">系统产品</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=43">软件产品</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                                                        </div>
-                            </div>
-                        </li>
-                                                <li class="nLi">
-                            <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=17">解决方案</a></h3>
-                             <div class="sub">
-                                <div class="w1200 fix">
-                                                                                                            <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=18">粮油行业</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=19">交通行业</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=20">冶金行业</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                                                        </div>
-                            </div>
-                        </li>
-                                                <li class="nLi">
-                            <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=23">合作单位</a></h3>
-                             <div class="sub">
-                                <div class="w1200 fix">
-                                                                                                            <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=47">成功案例</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=48">合作伙伴</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                                                        </div>
-                            </div>
-                        </li>
-                                                <li class="nLi">
-                            <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=24">服务与支持</a></h3>
-                             <div class="sub">
-                                <div class="w1200 fix">
-                                                                                                            <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094922744.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=49">产品说明书</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094724991.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=50">图纸</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094724991.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=51">软件</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094724991.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=52">其他</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                                                        </div>
-                            </div>
-                        </li>
-                                                <li class="nLi">
-                            <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=25">联系我们</a></h3>
-                             <div class="sub">
-                                <div class="w1200 fix">
-                                                                                                            <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027024438829.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=57">联系方式</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://www.longchikeji.cc/uploadfile/2017/1209/20171209115756383.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=58">营销网路</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027024438829.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=59">人才招聘</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                        <div class="classify">
-                                        <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027024438829.jpg">
-                                        <h3><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=60">留言板</a></h3>
-                                        
-                                                                                                                    </div>
-                                                                                                        </div>
-                            </div>
-                        </li>
-                                                                    </ul>
-                    <script id="jsID" type="text/javascript">
-                        jQuery(".navul").slide({
-                        type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
-                        titCell:".nLi", //鼠标触发对象
-                        targetCell:".sub", //titCell里面包含的要显示/消失的对象
-                        effect:"slideDown", //targetCell下拉效果
-                        delayTime:300 , //效果时间
-                        triggerTime:0, //鼠标延迟触发时间（默认150）
-                        returnDefault:true //   鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <div class="banner w1200" style="height: 600px">
-            <div class="banner-img fix">
-                
-                <div class="hd">
-                    <ul>
-                                                <li></li>
-                                                <li></li>
-                                            </ul>
-                </div>
-                <div class="bd">
-                    <ul>
-                                                <li><a href=""><img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094724991.jpg" /></a></li>
-                                                <li><a href=""><img src="http://luguang.hexiflower.com/uploadfile/2018/1026/20181026094724991.jpg" /></a></li>
-                                            </ul>
-                </div>
-            </div>
-            <script type="text/javascript">
-                jQuery(".banner-img").slide({mainCell:".bd ul",autoPlay:true});
-            </script>
-        </div>
+    <meta charset="utf-8"/>
+    <title>小虎名品</title>
+    <link href="/template/css/style.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="小虎名品"/>
+    <meta name="description" content="小虎名品">
+    <script type="text/javascript" src="/template/js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="/template/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/template/js/TouchSlide.1.0.js"></script>
+</head><body>
+<!--banner-->
+<div class="banner fix" id="banner">
+    <div class="hd">
+        <ul>
+                                    <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
     </div>
-    </div>
-    <div class="notice">
-        <div class="w1200">
-            <div class="bd">
-                                <ul>
-                                        <li><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=11&id=2">汽车衡称重常见作弊手段和</a></li>
-                                        <li><a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=11&id=3">汽车衡称重常见作弊手段和</a></li>
-                                    </ul>
-                
-            </div>
-       </div>
-    </div>
-    <div class="w1200">
-        <div class="index_fresh">
-            <div class="w1200">
-                <div class="index_freshTop">
-                    <h3>新品推荐</h3>
-                    <em class="fix">
-                        <i class="le"></i><span>RECOMMENDATION</span><i class="rt"></i>
-                    </em>
-                </div>
-                <div class="index_freshBom w1200">
-                    <div class="bd">
-                        <ul class="fix">
-                                                                                    <li>
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                                    <i><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg"></i>
-                                    <em>
-                                        <img src="http://luguang.hexiflower.com/statics/images/index_newest1.png">
-                                        <span>查看详情</span>
-                                    </em>
-                                    <b><img src="http://luguang.hexiflower.com/statics/images/index_newest.png"></b>
-                                    <p>XK3190-C603</p>
-                                </a>
-                            </li>
-                                                        <li>
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                                    <i><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg"></i>
-                                    <em>
-                                        <img src="http://luguang.hexiflower.com/statics/images/index_newest1.png">
-                                        <span>查看详情</span>
-                                    </em>
-                                    <b><img src="http://luguang.hexiflower.com/statics/images/index_newest.png"></b>
-                                    <p>XK3190-C603</p>
-                                </a>
-                            </li>
-                                                        <li>
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                                    <i><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg"></i>
-                                    <em>
-                                        <img src="http://luguang.hexiflower.com/statics/images/index_newest1.png">
-                                        <span>查看详情</span>
-                                    </em>
-                                    <b><img src="http://luguang.hexiflower.com/statics/images/index_newest.png"></b>
-                                    <p>XK3190-C603</p>
-                                </a>
-                            </li>
-                                                        <li>
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                                    <i><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg"></i>
-                                    <em>
-                                        <img src="http://luguang.hexiflower.com/statics/images/index_newest1.png">
-                                        <span>查看详情</span>
-                                    </em>
-                                    <b><img src="http://luguang.hexiflower.com/statics/images/index_newest.png"></b>
-                                    <p>XK3190-C603</p>
-                                </a>
-                            </li>
-                                                        <li>
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                                    <i><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg"></i>
-                                    <em>
-                                        <img src="http://luguang.hexiflower.com/statics/images/index_newest1.png">
-                                        <span>查看详情</span>
-                                    </em>
-                                    <b><img src="http://luguang.hexiflower.com/statics/images/index_newest.png"></b>
-                                    <p>XK3190-C603</p>
-                                </a>
-                            </li>
-                                                        <li>
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                                    <i><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg"></i>
-                                    <em>
-                                        <img src="http://luguang.hexiflower.com/statics/images/index_newest1.png">
-                                        <span>查看详情</span>
-                                    </em>
-                                    <b><img src="http://luguang.hexiflower.com/statics/images/index_newest.png"></b>
-                                    <p>XK3190-C603</p>
-                                </a>
-                            </li>
-                                                                                </ul>
-                    </div>
-                    <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=22" class="more">查看更多  +</a>
-                </div>
-                <script type="text/javascript">
-                jQuery(".index_freshBom").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:4,interTime:50});
-                </script>
-            </div>
-        </div>
-    </div>
-    <div class="index_product w1200">
-        <div class="index_productTop">
-            <h3>产品分类</h3>
-            <em class="fix">
-                <i class="le"></i><span>PRODUCT  CATEGORY</span><i class="rt"></i>
-            </em>
-        </div>
-        <div class="index_productBom fix le">
-            <div class="hd fix">
-                <ul class="fix">
-                                                            <li><span>称重基础零部件</span></li>
-                                        <li><span>工业衡器</span></li>
-                                        <li><span>系统产品</span></li>
-                                        <li><span>软件产品</span></li>
-                                                        </ul>
-            </div>
-            <div class="bd fix">
-                                
-                <ul class="fix">
-                                                                               <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                       <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                       <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                       <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                       <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                       <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                       <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                       <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=44&id=1">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027115223343.jpg">
-                            <h3>XK3190-C603</h3>
-                            <p>石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏...</p>
-                       </a>
-                   </li>
-                                                        </ul>
-                
-                <ul class="fix">
-                                                                               <li class="one">
-                       <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=46&id=11">
-                            <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027040331899.jpg">
-                            <h3>电子汽车衡</h3>
-                            <p>简介</p>
-                       </a>
-                   </li>
-                                                        </ul>
-                
-                <ul class="fix">
-                                                                                                </ul>
-                
-                <ul class="fix">
-                                                                                                </ul>
-                                            </div>
-            <a href="" class="more">查看更多  +</a>
-        </div>
-        <script>
-            jQuery(".index_productBom").slide({});
-        </script>
-    </div>
-    <div class="w1200">
-        <div class="keynote">
-            <div class="w1200">
-                <h3>执行体系，严格管理，改进提高，顾客满意</h3>
-                <p>依靠对产品质量的精益求精和对技术的不断创新，为用户提供全方位、全过程的称重解决方案。</p>
-                <span>全国服务热线：<b>400-071-5758</b></span>
-            </div>
-        </div>
-    </div>
-    <div class="w1200">
-        <div class="index_news">
-            <div class="w1200">
-                <div class="index_newsTop">
-                    <h3>新闻中心</h3>
-                    <em class="fix">
-                        <i class="le"></i><span>NEWS CENTER</span><i class="rt"></i>
-                    </em>
-                </div>
-                <div class="index_newsBom">
-                    <div class="hd">
-                        <ul>
-                            <li><span>全部新闻</span></li>
-                                                                                    <li><span>公司动态</span></li>
-                                                        <li><span>行业新闻</span></li>
-                                                                                </ul>
-                    </div>
-                    <div class="bd">
-                        <ul>
-                                                                                                                <li class="one">
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=12&id=16">
-                                    <b><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027041716627.jpg"></b>
-                                    <em>
-                                        <span>
-                                           汽车衡称重常见作弊手段和                                            <strong></strong>
-                                        </span>
-                                        <p>
-                                            测试                                        </p>
-                                        <i>2018-10-27  16:16</i>
-                                    </em>
-                                </a>
-                            </li>
-                                                                                    <li >
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=11&id=3">
-                                    <b><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027111055504.jpg"></b>
-                                    <em>
-                                        <span>
-                                          汽车衡称重常见作弊手段和                                            <strong></strong>
-                                        </span>
-                                        <p>
-                                            石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。                                        </p>
-                                        <i>2017-12-09  11:37</i>
-                                    </em>
-                                </a>
-                            </li>
-                                                                                    <li class="one">
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=11&id=2">
-                                    <b><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027111138781.jpg"></b>
-                                    <em>
-                                        <span>
-                                          汽车衡称重常见作弊手段和                                            <strong></strong>
-                                        </span>
-                                        <p>
-                                            石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏北大街99号，总投资1 3亿，占地面积35000平方米的现代化全新厂区拔地而起。                                        </p>
-                                        <i>2017-12-09  11:33</i>
-                                    </em>
-                                </a>
-                            </li>
-                                                                                                            </ul>
-
-
-                                                                        <ul>
-                                                                                                                <li  class="one">
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=11&id=3">
-                                    <b><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027111055504.jpg"></b>
-                                    <em>
-                                        <span>
-                                         汽车衡称重常见作弊手段和                                            <strong></strong>
-                                        </span>
-                                        <p>
-                                            石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。                                        </p>
-                                        <i>2017-12-09  11:37</i>
-                                    </em>
-                                </a>
-                            </li>
-                                                                                    <li  >
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=11&id=2">
-                                    <b><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027111138781.jpg"></b>
-                                    <em>
-                                        <span>
-                                         汽车衡称重常见作弊手段和                                            <strong></strong>
-                                        </span>
-                                        <p>
-                                            石家庄鹿光衡器有限公司是国内较早生产电子衡器的厂家之一，2011年被评为河北省重点企业。公司位于鹿泉市石柏北大街99号，总投资1 3亿，占地面积35000平方米的现代化全新厂区拔地而起。                                        </p>
-                                        <i>2017-12-09  11:33</i>
-                                    </em>
-                                </a>
-                            </li>
-                                                                                                            </ul>
-                                                <ul>
-                                                                                                                <li  class="one">
-                                <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=show&catid=12&id=16">
-                                    <b><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027041716627.jpg"></b>
-                                    <em>
-                                        <span>
-                                          汽车衡称重常见作弊手段和                                            <strong></strong>
-                                        </span>
-                                        <p>
-                                            测试                                        </p>
-                                        <i>2018-10-27  16:16</i>
-                                    </em>
-                                </a>
-                            </li>
-                                                                                                            </ul>
-                                                
-                    </div>
-                    <a href="http://luguang.hexiflower.com/index.php?m=content&c=index&a=lists&catid=10" class="more">查看更多  +</a>
-                </div>
-                <script>
-                    jQuery(".index_newsBom").slide({});
-                </script>
-            </div>
-        </div>
-    </div>
-    <div class="w1200">
-        <div class="index_contact">
-            <div class="w1200">
-                <div class="index_contactTop">
-                    <h3>联系我们</h3>
-                    <em class="fix">
-                        <i class="le"></i><span>CONTACT US</span><i class="rt"></i>
-                    </em>
-                </div>
-                <div class="index_contactBom fix">
-                    <div class="index_contactBom_left" id="dituContent">
-
-                    </div>
-                                        <div class="index_contentBom_right">
-                        <ul>
-                            <li class="li1">
-                                <em class="fix">
-                                    <span>地址：</span>
-                                    <p>河北省石家庄市长安区石纺路石纺小区35栋3单元402室</p>
-                                </em>
-                            </li>
-                            <li class="li2">
-                                <em class="fix">
-                                    <span>电话：</span>
-                                    <p>0311-82100713 <br>0311-82011949、400-0715-758</p>
-                                </em>
-                            </li>
-                            <li class="li3">
-                                <em class="fix">
-                                    <span>邮箱：</span>
-                                    <p>787964631@qq.com luguanghengqi@163.com</p>
-                                </em>
-                            </li>
-                            <li class="li4">
-                                <em class="fix">
-                                    <span>传真：</span>
-                                    <p>0311-89257225</p>
-                                </em>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=56srZYI3vAB9XzW2B0u544hHhsdWdE7X"></script>
-<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-        addMapOverlay();//向地图添加覆盖物
-    }
-    function createMap(){
-        map = new BMap.Map("dituContent");
-        map.centerAndZoom(new BMap.Point(114.517104,38.083038),18);
-    }
-    function setMapEvent(){
-        map.enableScrollWheelZoom();
-        map.enableKeyboard();
-        map.enableDragging();
-        map.enableDoubleClickZoom()
-    }
-    function addClickHandler(target,window){
-        target.addEventListener("click",function(){
-            target.openInfoWindow(window);
-        });
-    }
-    function addMapOverlay(){
-        var markers = [
-
-            {content:"鹿光衡器",title:"鹿光衡器",imageOffset: {width:-46,height:-21},position:{lat:38.083038,lng:114.517104}}
-        ];
-        for(var index = 0; index < markers.length; index++ ){
-            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
-            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
-                    imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
-                })});
-            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
-            var opts = {
-                width: 200,
-                title: markers[index].title,
-                enableMessage: false
-            };
-            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
-            marker.setLabel(label);
-            addClickHandler(marker,infoWindow);
-            map.addOverlay(marker);
-        };
-    }
-    //向地图添加控件
-    function addMapControl(){
-        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-        map.addControl(scaleControl);
-        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-        map.addControl(navControl);
-        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
-        map.addControl(overviewControl);
-    }
-    var map;
-    initMap();
-</script>
-<div class="footer fix">
-    <div class="w1200">
-        <div class="footer_top fix">
-            <div class="footer_left">
-                <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027043534493.png">
-            </div>
-            <div class="footer_main">
-                <span>友情链接：</span>
-
-                <ul>
-                                                            <li><a href="http://ww.baidu.com/" style="display: block;color: #fff;">百度</a> </li>
-                                        <li><a href="http://news.sina.com.cn/" style="display: block;color: #fff;">新浪</a> </li>
-                                        <li><a href="http://news.sohu.com/" style="display: block;color: #fff;">搜狐</a> </li>
-                                        <li><a href="http://www.iqiyi.com/" style="display: block;color: #fff;">爱奇艺</a> </li>
-                                        <li><a href="http://news.qq.com/" style="display: block;color: #fff;">腾讯</a> </li>
-                                        <li><a href="http://www.toutiao.com/" style="display: block;color: #fff;">头条</a> </li>
-                                        <li><a href="http://news.163.com/" style="display: block;color: #fff;">网易</a> </li>
-                                        <li><a href="http://news.youku.com/" style="display: block;color: #fff;">优酷</a> </li>
-                                        
-                </ul>
-            </div>
-            <div class="footer_right">
-                <em>
-                    <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027045754347.jpg">
-                    <p>微信公众号</p>
-                </em>
-                <em>
-                    <img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027043758854.jpg">
-                    <p>微信服务号</p>
-                </em>
-            </div>
-        </div>
-        <div class="footer_bom">
-            <p style="color:#fff">版权所有：石家庄鹿光衡器有限公司    备案号：冀ICP备05077736号   网址：WWW.LUGUANGHENGQI.COM</p>
-        </div>
+    <div class="bd">
+        <ul>
+                        <li><a href=""><img src="http://shop.com/uploadfile/2018/1219/20181219061921570.jpg" /></a></li>
+                        <li><a href=""><img src="http://shop.com/uploadfile/2018/1219/20181219061921570.jpg" /></a></li>
+                        <li><a href=""><img src="http://shop.com/uploadfile/2018/1219/20181219061921570.jpg" /></a></li>
+                    </ul>
     </div>
 </div>
-<div class="function">
+<script type="text/javascript">
+    TouchSlide({
+        slideCell: "#banner",
+        titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell: ".bd ul",
+        effect: "left",
+        autoPlay: true,//自动播放
+        autoPage: true, //自动分页
+        switchLoad: "_src" //切换加载，真实图片路径为"_src"
+    });
+</script>
+<div class="index_nav fix">
+    <ul>
+        <li><a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=9"><i><img src="http://shop.com/uploadfile/2018/1219/20181219065710399.png"/></i><span>行业资讯</span></a></li>
+        <li><a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=10"><i><img src="http://shop.com/uploadfile/2018/1219/20181219065736772.png"/></i><span>联系我们</span></a></li>
+        <li><a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=20"><i><img src="http://shop.com/uploadfile/2018/1219/20181219065755696.png"/></i><span>一键导航</span></a></li>
+    </ul>
+</div>
+<div class="index_bt1 fix">
+    <i></i>
+    <h3>公司简介</h3>
+</div>
+<div class="index_about fix">
 
-    <i class="t"><a href="#anchor" class="topLink"><img src="http://luguang.hexiflower.com/statics/images/top.png"></a></i>
-    <div class="function_cn fix le">
-        <div class="hd fix">
-            <ul>
-                <li><img src="http://luguang.hexiflower.com/statics/images/weix.png"></li>
-                <li><img src="http://luguang.hexiflower.com/statics/images/qq.png"></li>
-                <li class="on"><img src="http://luguang.hexiflower.com/statics/images/rex1.png"></li>
-            </ul>
+            <span>小虎名品自2015年成立以来，致力服务于广大高端客户群体，一单生意交一个朋友，诚信第一原则服务好每一位客户！</span>
+<p>奢饰品回收 名表 钻石 名包</p>
+<p>寄卖</p>
+<p>鉴定</p>
         </div>
-        <div class="bd fix">
-            <ul>
+<div class="index_bt2 fix">
+    <img src="http://shop.com/uploadfile/2018/1219/20181219070115257.png"/>
+    <h3>名表品牌</h3>
+    <a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=12">更多</a>
+</div>
+<div class="index_brand fix">
+    <ul>
+                        <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=1"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
                 <li>
-                    <em><img src="http://luguang.hexiflower.com/uploadfile/2018/1027/20181027044948224.jpg"></em>
-                </li>
-            </ul>
-            <ul>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=2"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
                 <li>
-                        <span>
-                            <p>办公室：1754066869</p>
-                            <p>售后：787964631</p>
-                            <p>销售：411448622</p>
-                        </span>
-                </li>
-            </ul>
-            <ul>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=3"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
                 <li>
-                    <i>Tel：13656897412</i>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <strong><a href="http://baidu.com"><img src="http://luguang.hexiflower.com/statics/images/liuyan.png"><p>预约咨询</p></a></strong>
-    <script>
-        jQuery(".function_cn").slide({});
-    </script>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=4"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=5"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=6"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=7"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=8"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=12&id=9"><i><img src="http://shop.com/uploadfile/2018/1219/20181219070510763.jpg"/></i><span>百达翡丽</span></a>
+        </li>
+                    </ul>
+</div>
+<div class="index_bt2 fix">
+    <img src="http://shop.com/uploadfile/2018/1219/20181219070131231.png"/>
+    <h3>钻石品牌</h3>
+    <a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=13">更多</a>
+</div>
+<div class="index_brand fix">
+    <ul>
+        
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=21"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=22"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=23"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=24"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=25"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=26"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=27"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=28"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=13&id=29"><i><img src="http://shop.com/uploadfile/2018/1219/20181219071021602.jpg"/></i><span>I DO</span></a>
+        </li>
+                    </ul>
+</div>
+<div class="index_bt1 fix">
+    <i></i>
+    <h3>服务项目</h3>
+    <a href="#">更多</a>
+</div>
+<div class="index_project fix">
+    <ul>
+        <li><a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=15"><img src="http://shop.com/uploadfile/2018/1219/20181219071229306.jpg"/></a></li>
+        <li><a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=16"><img src="http://shop.com/uploadfile/2018/1219/20181219071242922.jpg"/></a></li>
+    </ul>
+    <ul>
+        <li><a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=17"><img src="http://shop.com/uploadfile/2018/1219/20181219071255203.jpg"/></a></li>
+    </ul>
+</div>
+<div class="index_bt1 fix">
+    <i></i>
+    <h3>寄售流程</h3>
+</div>
+<div class="index_process fix">
+    <img src="/template/images/process_tp.png"/>
+</div>
+<div class="index_bt1 fix">
+    <i></i>
+    <h3>鉴宝中心</h3>
+    <a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=18">更多</a>
+</div>
+<div class="index_Appraisal fix">
+    <ul>
+                        <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=18&id=38" class="tbox">
+                <div><i><img src="http://shop.com/uploadfile/2018/1219/20181219071634243.jpg"/></i></div>
+                <div class="index_Appraisalcn">
+                    <h3>教你如何保养我们的爱表赶快来学习吧！</h3>
+                    <span>2018-12-19</span>
+                </div>
+            </a>
+        </li>
+
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=18&id=39" class="tbox">
+                <div><i><img src="http://shop.com/uploadfile/2018/1219/20181219071634243.jpg"/></i></div>
+                <div class="index_Appraisalcn">
+                    <h3>教你如何保养我们的爱表赶快来学习吧！</h3>
+                    <span>2018-12-19</span>
+                </div>
+            </a>
+        </li>
+
+                <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=show&catid=18&id=40" class="tbox">
+                <div><i><img src="http://shop.com/uploadfile/2018/1219/20181219071634243.jpg"/></i></div>
+                <div class="index_Appraisalcn">
+                    <h3>教你如何保养我们的爱表赶快来学习吧！</h3>
+                    <span>2018-12-19</span>
+                </div>
+            </a>
+        </li>
+
+                    </ul>
+</div>
+<div class="wall fix"></div>
+
+<div class="footer fix">
+    <ul>
+        <li  class="on">
+            <a href="/">
+                <i class="footer_tb1"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=19" >
+                <i class="footer_tb2"></i>
+                <span>维修保养</span>
+            </a>
+        </li>
+        <li >
+            <a href="http://shop.com/index.php?m=content&c=index&a=lists&catid=10">
+                <i class="footer_tb3"></i>
+                <span>联系我们</span>
+            </a>
+        </li>
+    </ul>
 </div>
 </body>
 </html>

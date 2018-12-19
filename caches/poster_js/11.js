@@ -20,7 +20,7 @@ function PCMSAD(PID) {
 function statAD() {
 	var new_element = document.createElement("script"); 
 	new_element.type = "text/javascript";
-	new_element.src="http://luguang.com/index.php?m=poster&c=index&a=show&siteid="+this.SiteID+"&id="+this.ADID+"&spaceid="+this.PosID; 
+	new_element.src="http://shop.com/index.php?m=poster&c=index&a=show&siteid="+this.SiteID+"&id="+this.ADID+"&spaceid="+this.PosID; 
 	document.body.appendChild(new_element);
 }
 
@@ -46,14 +46,14 @@ function showADContent() {
  
 var cmsAD_11 = new PCMSAD('cmsAD_11'); 
 cmsAD_11.PosID = 11; 
-cmsAD_11.ADID = 12; 
+cmsAD_11.ADID = 13; 
 cmsAD_11.ADType = "images"; 
-cmsAD_11.ADName = "第二张"; 
-cmsAD_11.ADContent = "{'Images':[{'imgADLinkUrl':'','imgADAlt':'','ImgPath':'http://luguang.com/uploadfile/2018/1026/20181026094724991.jpg'}],'imgADLinkTarget':'New','Count':'1','showAlt':'Y'}"; 
-cmsAD_11.URL = "http://luguang.com/index.php?m=poster&c=index"; 
+cmsAD_11.ADName = "第三张"; 
+cmsAD_11.ADContent = "{'Images':[{'imgADLinkUrl':'','imgADAlt':'','ImgPath':'http://shop.com/uploadfile/2018/1219/20181219061921570.jpg'}],'imgADLinkTarget':'New','Count':'1','showAlt':'Y'}"; 
+cmsAD_11.URL = "http://shop.com/index.php?m=poster&c=index"; 
 cmsAD_11.SiteID = 1; 
-cmsAD_11.Width = 1920; 
-cmsAD_11.Height = 600; 
+cmsAD_11.Width = 750; 
+cmsAD_11.Height = 430; 
 cmsAD_11.UploadFilePath = ''; 
 cmsAD_11.ShowAD();
 
